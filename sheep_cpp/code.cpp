@@ -4,7 +4,6 @@
 // <date>
 
 #include <iostream>
-#include <string>
 #include <set>
 #include <cstring>
 #include <cstdio>
@@ -25,9 +24,10 @@ int main ()
 		for (int i=1; i<100001; i++) {
 			char number[100];
 			sprintf(number, "%d", N*i);
-			for (int j=0; j<strlen(number); j++) {
+			for (size_t j=0; j<strlen(number); j++) {
 				digits[number[j] - '0'] = true;
 			}
+
 			done = false;
 			for (int j=0; j<10; j++) {
 				if (!digits[j]) {
