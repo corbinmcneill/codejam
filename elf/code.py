@@ -58,7 +58,7 @@ for t in range(1,int(lines.pop(0))+1):
 	d= int(d)
 
 	n,d = simplify(n,d)
-	
+
 	check = 1.0;
 	while check<d:
 		check*=2

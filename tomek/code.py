@@ -17,7 +17,7 @@ def solve(case):
 	matrix = []
 	for i in range(4):
 		matrix.append(lines.pop(0).split())
-	
+
 	game_done = True
 	for i in range(4):
 		validX = True;
@@ -59,7 +59,7 @@ def solve(case):
 		if validO:
 			print "Case #%d: O won"%t
 			return
-	
+
 	diagonal_points = [[0,0],[1,1],[2,2],[3,3]]
 	validX=True
 	validO=True
@@ -71,7 +71,7 @@ def solve(case):
 		else
 			validX=False
 			validO=True
-	
+
 	if validX:
 		print "Case #%d: X won"%t
 		return
